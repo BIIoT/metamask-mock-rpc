@@ -1,0 +1,19 @@
+[package]
+name = "metamask_sign_checker"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+ethereum-types = "0.10.0"
+hex = "0.4.3"
+log = "0.4"
+rlp = "0.5.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+basic-http = { path = "../biiot/basic-http" }
+hub-channel = { path = "../biiot/hub-channel" }
+crypto = { path = "../biiot/crypto" }
+web3-signer = { path = "web3-signer" }
